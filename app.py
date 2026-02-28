@@ -44,7 +44,7 @@ if uploaded_file:
             progress.progress(i + 1)
 
         # -------- IMAGE PREPROCESSING --------
-        img = image.resize((256, 256))
+        img = image.resize((150, 150))
         img_array = np.array(img) / 255.0
         img_array = np.expand_dims(img_array, axis=0)
 
